@@ -26,7 +26,7 @@ The SDK is lightweight, supports theming to match your app’s branding, and gua
 
 | Platform     | Minimum OS Version | Language   | Version                  |
 | ------------ | ------------------ | ---------- | ------------------------ |
-| Android      | API 28+            | Kotlin     | 2.0+ ([Gradle Compatibility](https://developer.android.com/build/kotlin-support){target="_blank"})
+| Android      | API 28+            | Kotlin     | 2.0+ ([Gradle Compatibility](https://developer.android.com/build/kotlin-support))
 | iOS          | 14.0+              | Swift UI   | 5.3                      |
 | Flutter      | —                  | Dart       | Latest                   |
 | React Native | —                  | JavaScript | Latest                   |
