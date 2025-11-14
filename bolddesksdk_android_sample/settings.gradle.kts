@@ -1,0 +1,33 @@
+pluginManagement {
+    repositories {
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
+        mavenCentral()
+        gradlePluginPortal()
+        mavenLocal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        mavenLocal()
+    }
+}
+
+rootProject.name = "bolddeskSDK_android_sample"
+include(":app")
+
+includeBuild("../../bolddesk-mobile-sdk-android") {
+    dependencySubstitution {
+        substitute(module("io.github.somaprasanna4037:bds-desk")).using(project(":app"))
+    }
+}
+
+ 

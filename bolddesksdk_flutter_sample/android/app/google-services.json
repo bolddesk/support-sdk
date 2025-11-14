@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1094423700279",
+    "project_id": "integrate-push-notification",
+    "storage_bucket": "integrate-push-notification.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094423700279:android:cf61fb43b12c10ea7eb0b2",
+        "android_client_info": {
+          "package_name": "com.syncfusion.bolddesksdk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLa6F4Rpr7liHMynNrkEFHxJIHYvfMGX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
