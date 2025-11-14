@@ -1,16 +1,16 @@
 PODS:
-  - bd-library-sdk (1.0.3)
+  - bd-support-library (2.0.0)
 
 DEPENDENCIES:
-  - bd-library-sdk (~> 1.0.3)
+  - bd-support-library (~> 2.0.0)
 
 SPEC REPOS:
   trunk:
-    - bd-library-sdk
+    - bd-support-library
 
 SPEC CHECKSUMS:
-  bd-library-sdk: 6e40143f53f7bacabeacddb10f6de54036e7b6e7
+  bd-support-library: de7bcbff21b972048f5f12c9fe64db813550299d
 
-PODFILE CHECKSUM: 52f86ac748c4e50a643c40d4dac20cebbadbd901
+PODFILE CHECKSUM: a0061ee35d7022744f1b95152d24eccdd92ae5a8
 
 COCOAPODS: 1.16.2

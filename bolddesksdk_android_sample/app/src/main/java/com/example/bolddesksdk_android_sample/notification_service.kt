@@ -13,8 +13,14 @@ import com.syncfusion.bolddeskmobileSDK.BoldDeskSupportSDK
 class NotificationService : FirebaseMessagingService() {
 
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
-        // Call this method to handle the incoming push notification
-        BoldDeskSupportSDK.handlePushNotifications(this, remoteMessage.getData(),icon = com.syncfusion.bolddeskmobileSDK.R.drawable.bolddesk_logo)
+        if (BoldDeskSupportSDK.isFromMobileSDK(remoteMessage.getData())) {
+            // Call this method to handle the incoming push notification
+            BoldDeskSupportSDK.handlePushNotifications(
+                this,
+                remoteMessage.getData(),
+                icon = com.syncfusion.bolddeskmobileSDK.R.drawable.bolddesk_logo
+            )
+        }
     }
 
 
@@ -22,7 +28,7 @@ class NotificationService : FirebaseMessagingService() {
         // If token updated then send the new token to BoldDesk SDK
         super.onNewToken(token)
         fcm_token = token
-        BoldDeskSupportSDK.setFCMRegistrationToken(this,token)
+        BoldDeskSupportSDK.setFCMRegistrationToken(this, token)
     }
 
 }

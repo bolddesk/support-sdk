@@ -56,9 +56,6 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.syncfusion.bolddeskmobileSDK.BoldDeskSupportSDK
-import com.syncfusion.bolddeskmobileSDK.ui.theme.BoldDeskTheme
-import com.syncfusion.bolddeskmobileSDK.utils.fonts.FontSize
-import com.syncfusion.bolddeskmobileSDK.view.widgets.CommonAppBar
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -107,7 +104,10 @@ fun LoginScreen(
     fun applyConfigurations() {
         try {
             if (selectedAppBarColor.isNotBlank() && selectedButtonColor.isNotBlank()) {
-                BoldDeskSupportSDK.applyTheme(selectedAppBarColor, accentColor = selectedButtonColor)
+                BoldDeskSupportSDK.applyTheme(
+                    selectedAppBarColor,
+                    accentColor = selectedButtonColor
+                )
             }
             when (selectedFontFamily) {
                 "DancingScript" -> BoldDeskSupportSDK.applyCustomFontFamily(
@@ -150,7 +150,7 @@ fun LoginScreen(
     Box(modifier = Modifier.fillMaxSize()) {
         Scaffold(
             modifier = Modifier.fillMaxSize(),
-            topBar = { CommonAppBar("LOGIN", showBackNavigationButton = false) }
+            topBar = { CommonAppBar() }
         ) { innerPadding ->
 
             Column(
@@ -179,50 +179,57 @@ fun LoginScreen(
                         brandUrl = it
                     }
                 )
-                ButtonWidget(
-                    modifier = Modifier.align(Alignment.End),
-                    text = "Initialize",
-                    onClick = {
-                        if (checkLoginEnabled()) {
-                            coroutineScope.launch {
-                                isLoading = true
-                                applyConfigurations()
-                                withContext(Dispatchers.IO) {
-                                    BoldDeskSupportSDK.initialize(
-                                        context = context, appId, brandUrl,
-                                        onSuccessCallback = {
-                                            coroutineScope.launch(Dispatchers.Main) {
-                                                isLoading = false
-                                                Toast.makeText(
-                                                    context,
-                                                    it,
-                                                    Toast.LENGTH_SHORT
-                                                ).show()
-                                            }
+                Row(modifier = Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End) {
+                    ButtonWidget(
+                        text = "Initialize",
+                        onClick = {
+                            if (checkLoginEnabled()) {
+                                coroutineScope.launch {
+                                    isLoading = true
+                                    applyConfigurations()
+                                    withContext(Dispatchers.IO) {
+                                        BoldDeskSupportSDK.initialize(
+                                            context = context, appId, brandUrl,
+                                            onSuccessCallback = {
+                                                coroutineScope.launch(Dispatchers.Main) {
+                                                    isLoading = false
+                                                    Toast.makeText(
+                                                        context,
+                                                        it,
+                                                        Toast.LENGTH_SHORT
+                                                    ).show()
+                                                }
 
-                                        },
-                                        onErrorCallback = {
-                                            coroutineScope.launch(Dispatchers.Main) {
-                                                isLoading = false
-                                                Toast.makeText(
-                                                    context,
-                                                    it,
-                                                    Toast.LENGTH_SHORT
-                                                ).show()
-                                            }
+                                            },
+                                            onErrorCallback = {
+                                                coroutineScope.launch(Dispatchers.Main) {
+                                                    isLoading = false
+                                                    Toast.makeText(
+                                                        context,
+                                                        it,
+                                                        Toast.LENGTH_SHORT
+                                                    ).show()
+                                                }
 
-                                        })
+                                            })
+                                    }
                                 }
+                            } else {
+                                Toast.makeText(
+                                    context,
+                                    "Please fill Above Fields",
+                                    Toast.LENGTH_SHORT
+                                ).show()
                             }
-                        } else {
-                            Toast.makeText(
-                                context,
-                                "Please fill Above Fields",
-                                Toast.LENGTH_SHORT
-                            ).show()
                         }
-                    }
-                )
+                    )
+                    ButtonWidget(
+                        text = "Clear All Data",
+                        onClick = {
+                            BoldDeskSupportSDK.clearAllLocalData(context)
+                        }
+                    )
+                }
                 Text("Login: ", style = MaterialTheme.typography.labelLarge)
                 InputField(
                     textValue = serverKey,
@@ -249,7 +256,7 @@ fun LoginScreen(
                                     isLoading = true
                                     getToken()
                                     delay(100)
-                                    BoldDeskSupportSDK.setFCMRegistrationToken(context,fcm_token)
+                                    BoldDeskSupportSDK.setFCMRegistrationToken(context, fcm_token)
                                     val jwt = JWTUtils.generateJwt(
                                         clientEmail,
                                         serverKey
@@ -557,7 +564,7 @@ fun SheetWidget(
                 showSheet = false
             },
             sheetState = sheetState,
-            containerColor = BoldDeskTheme.colors.primaryBackgroundColor,
+            containerColor = Color.White,
             shape = RoundedCornerShape(14.dp),
         ) {
             // Apply safe area padding to the content
@@ -572,10 +579,7 @@ fun SheetWidget(
                 ) {
                     Text(
                         text = "Select Font Family",
-                        style = MaterialTheme.typography.bodyLarge.copy(
-                            fontWeight = FontWeight.W600,
-                            fontSize = FontSize.xxlarge
-                        ),
+                        style = MaterialTheme.typography.bodyLarge,
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis,
                         modifier = Modifier.weight(1f)
@@ -606,10 +610,7 @@ fun SheetWidget(
                                 ) {
                                     Text(
                                         text = option,
-                                        style = MaterialTheme.typography.bodyLarge.copy(
-                                            fontWeight = FontWeight.W500,
-                                            color = BoldDeskTheme.colors.textSecondaryColor
-                                        ),
+                                        style = MaterialTheme.typography.bodyLarge,
                                     )
 
                                 }
@@ -617,7 +618,7 @@ fun SheetWidget(
                                     Icon(
                                         imageVector = Icons.Default.Done,
                                         contentDescription = "Selected",
-                                        tint = BoldDeskTheme.colors.greenColor
+                                        tint = Color.Green
                                     )
                                 }
                             }
