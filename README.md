@@ -1,30 +1,34 @@
 # BoldDesk Support SDK
 
-The BoldDesk Mobile Support SDK enables the integration of a fully functional help centre directly within your mobile application.
-
-This allows end-users to access support tickets and knowledge base articles inside the app, reducing the need to open a web browser.
+The **BoldDesk Mobile Support SDK** enables you to integrate a fully functional help center directly into your mobile application. This allows end-users to access support tickets and Knowledge Base (KB) articles inside the app, reducing the need to open a web browser.
 
 With the SDK, you can:
-* Create a customisable help centre dashboard.
-* Enable users to submit support requests with attachments.
-* Offer search and filtering capabilities for knowledge base articles to support self-service.
-* Track ticket status, reply to agents, update, and close tickets.
-* Support both anonymous and authenticated users through JWT-based authentication.
-* Include push notifications for real-time updates.
 
-The SDK is lightweight, supports theming to match your app's branding, and guarantees secure authentication.
+*   Create a customizable help center dashboard.
+*   Enable users to submit support requests with attachments.
+*   Offer search and filtering capabilities for KB articles to support self-service.
+*   Track ticket status, reply to agents, update, and close tickets.
+*   Support both **anonymous** and **authenticated** users through JWT-based authentication.
+*   Include push notifications for real-time updates.
 
-| Feature           | Anonymous | Authenticated |
-| ----------------- | --------- | ------------- |
-| View KB Article   | ✅        | ✅            |
-| Create Ticket     | ✅        | ✅            |
-| View Tickets      |           | ✅            |
-| Push Notifications|           | ✅            |
+The SDK is lightweight, supports theming to match your app’s branding, and guarantees secure authentication.
 
-Supported Platforms: Android, iOS, Flutter, React Native
+## Key Features
 
-##### Prerequisites:
-| Requirement | Minimum Version | Language       |
-| ----------- | --------------- | -------------- |
-| Android     | API 28+         | Kotlin         |
-| iOS         | 14.0+           | Swift UI       |
+| Feature            | Anonymous | Authenticated |
+| ------------------ | --------- | ------------- |
+| View KB Articles   | ✅         | ✅             |
+| Create Ticket      | ✅         | ✅             |
+| View Tickets       |           | ✅             |
+| Push Notifications |           | ✅             |
+
+## Supported Platforms & Prerequisites
+
+| Platform     | Minimum OS Version | Language   | Version                  |
+| ------------ | ------------------ | ---------- | ------------------------ |
+| Android      | API 28+            | Kotlin     | 2.0+ ([Gradle Compatibility](https://developer.android.com/build/kotlin-support){target="_blank"})
+| iOS          | 14.0+              | Swift UI   | 5.3                      |
+| Flutter      | —                  | Dart       | Latest                   |
+| React Native | —                  | JavaScript | Latest                   |
+
+To set up the SDK in BoldDesk, learn more on [How to Configure Mobile SDK in BoldDesk](https://support.bolddesk.com/kb/article/21786)
