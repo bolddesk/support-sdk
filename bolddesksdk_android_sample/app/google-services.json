@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "904282010034",
+    "project_id": "sdk-notification-7faf2",
+    "storage_bucket": "sdk-notification-7faf2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904282010034:android:1b7a1a0864c80f22ca74ab",
+        "android_client_info": {
+          "package_name": "com.example.bolddesksdk_android_sample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYNyldHqdg7RkrRYCDdNOojUSU1jDySh8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
