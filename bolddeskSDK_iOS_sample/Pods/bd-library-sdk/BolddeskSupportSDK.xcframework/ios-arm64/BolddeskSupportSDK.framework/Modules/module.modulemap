@@ -1,6 +1,0 @@
-framework module BolddeskSupportSDK {
-  umbrella header "BolddeskSupportSDK.h"
-  export *
-
-  module * { export * }
-}

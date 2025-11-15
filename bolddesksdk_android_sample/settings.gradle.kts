@@ -24,10 +24,5 @@ dependencyResolutionManagement {
 rootProject.name = "bolddeskSDK_android_sample"
 include(":app")
 
-//includeBuild("../../bolddesk-mobile-sdk-android") {
-//    dependencySubstitution {
-//        substitute(module("io.github.somaprasanna4037:bds-desk")).using(project(":app"))
-//    }
-//}
 
  

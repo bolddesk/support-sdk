@@ -25,14 +25,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.13.0"
-  bolddesk_support_sdk:
+  bd_support_sdk:
     dependency: "direct main"
     description:
-      name: bolddesk_support_sdk
-      sha256: "472a6517ed5954440fc0921b9aef9d25f6efcd15ebfb98bb314513127de4fcec"
+      name: bd_support_sdk
+      sha256: "66d96890ce43f6faf845e9be951e5c86c1d5a38a53b0311ee925453cc75e9b8f"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.4"
+    version: "1.0.0"
   boolean_selector:
     dependency: transitive
     description:

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import BolddeskSupportSDK
+import BoldDeskSupportSDK
 
 @main
 struct bolddeskSDK_iOS_sampleApp: App {
@@ -21,7 +21,7 @@ struct bolddeskSDK_iOS_sampleApp: App {
             // Passes the notification payload to BolddeskSDK for navigation or handling.
                 .onReceive(NotificationCenter.default.publisher(for: Notification.Name("NotificationTapped"))) { notification in
                     if let data = notification.object as? [AnyHashable: Any] {
-                        BolddeskSDK.processRemoteNotification(userInfo: data)
+                        BDSupportSDK.processRemoteNotification(userInfo: data)
                     }
                 }
         }

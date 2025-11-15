@@ -3,7 +3,7 @@ import SwiftUI
 import Firebase
 import FirebaseMessaging
 import UserNotifications
-import BolddeskSupportSDK
+import BoldDeskSupportSDK
 
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
     
@@ -26,7 +26,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
         // Handle notification if app was launched from a terminated state via push.
         if let remoteNotification = launchOptions?[.remoteNotification] as? [AnyHashable: Any] {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                BolddeskSDK.processRemoteNotification(userInfo: remoteNotification)
+                BDSupportSDK.processRemoteNotification(userInfo: remoteNotification)
             }
         }
         return true

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CFB793B2EC7445B00B615B3 /* SwiftJWT in Frameworks */ = {isa = PBXBuildFile; productRef = 6CFB793A2EC7445B00B615B3 /* SwiftJWT */; };
 		FC17EB4D2EA73F7F0049946F /* Pods_bolddeskSDK_iOS_sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC17EB4C2EA73F7F0049946F /* Pods_bolddeskSDK_iOS_sample.framework */; };
 		FCFC55492EA73B3D00DFA8BE /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = FCFC55482EA73B3D00DFA8BE /* FirebaseMessaging */; };
 /* End PBXBuildFile section */
@@ -23,6 +24,8 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FCA777C02EA739D900691F4C /* bolddeskSDK_iOS_sample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = bolddeskSDK_iOS_sample;
 			sourceTree = "<group>";
 		};
@@ -35,6 +38,7 @@
 			files = (
 				FC17EB4D2EA73F7F0049946F /* Pods_bolddeskSDK_iOS_sample.framework in Frameworks */,
 				FCFC55492EA73B3D00DFA8BE /* FirebaseMessaging in Frameworks */,
+				6CFB793B2EC7445B00B615B3 /* SwiftJWT in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +133,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				FCFC55472EA73B3D00DFA8BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				6CFB79392EC7445B00B615B3 /* XCRemoteSwiftPackageReference "Swift-JWT" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FCA777BF2EA739D900691F4C /* Products */;
@@ -181,13 +186,9 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-bolddeskSDK_iOS_sample/Pods-bolddeskSDK_iOS_sample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-bolddeskSDK_iOS_sample/Pods-bolddeskSDK_iOS_sample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -341,6 +342,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "bolddeskSDK-iOS-sample-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to take photos and record videos.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need access to microphone for recording videos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -377,6 +380,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "bolddeskSDK-iOS-sample-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera access to take photos and record videos.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need access to microphone for recording videos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -424,6 +429,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6CFB79392EC7445B00B615B3 /* XCRemoteSwiftPackageReference "Swift-JWT" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/Swift-JWT.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.2;
+			};
+		};
 		FCFC55472EA73B3D00DFA8BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -435,6 +448,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6CFB793A2EC7445B00B615B3 /* SwiftJWT */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CFB79392EC7445B00B615B3 /* XCRemoteSwiftPackageReference "Swift-JWT" */;
+			productName = SwiftJWT;
+		};
 		FCFC55482EA73B3D00DFA8BE /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FCFC55472EA73B3D00DFA8BE /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

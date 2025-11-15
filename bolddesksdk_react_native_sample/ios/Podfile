@@ -1,3 +1,8 @@
+pod 'FirebaseCore', :modular_headers => true
+pod 'GoogleUtilities', :modular_headers => true
+pod 'FirebaseCoreInternal', :modular_headers => true
+pod 'bd-support-library', '~> 1.0.9'
+
 # Resolve react_native_pods.rb with node to allow for hoisting
 require Pod::Executable.execute_command('node', ['-p',
   'require.resolve(

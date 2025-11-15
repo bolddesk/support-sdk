@@ -1,6 +1,5 @@
 import 'dart:io';
-
-import 'package:bolddesk_support_sdk/bolddesk_support_sdk.dart';
+import 'package:bd_support_sdk/bolddesk_support_sdk.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 
 @pragma("vm:entry-point")

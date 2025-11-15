@@ -1,6 +1,6 @@
 import messaging, { firebase } from '@react-native-firebase/messaging';
 import { PermissionsAndroid, Platform } from 'react-native';
-import { BoldDeskSupportSDK } from 'bd-support-sdk-react-native';
+import { BoldDeskSupportSDK } from 'bolddesk_support_sdk';
 import { ToastAndroid } from 'react-native';
 
 async function requestUserPermission() {
@@ -53,7 +53,11 @@ export async function initializeNotifications() {
     await requestUserPermission()
 
     // Setup handlers
-    setupForegroundNotificationHandler()
+    if (Platform.OS === 'ios') {
+      setupIosNotificationTapHandler();
+    } else {
+      setupForegroundNotificationHandler()
+    }
 
     // Get token
     const token = await getDeviceToken()
@@ -65,3 +69,19 @@ export async function initializeNotifications() {
   }
 }
 
+
+export async function setupIosNotificationTapHandler() {
+  // Handle notification tap when app is in background
+  messaging().onNotificationOpenedApp(async remoteMessage => {
+    await new Promise<void>(resolve => setTimeout(resolve, 500));
+    if (remoteMessage?.data) {
+      BoldDeskSupportSDK.handleNotification(remoteMessage.data);
+    }
+  });
+  // Handle notification tap when app was terminated
+  const initialNotification = await messaging().getInitialNotification();
+  if (initialNotification?.data) {
+    await new Promise<void>(resolve => setTimeout(resolve, 500));
+    BoldDeskSupportSDK.handleNotification(initialNotification.data);
+  }
+}
