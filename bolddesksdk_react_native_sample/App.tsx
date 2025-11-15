@@ -12,7 +12,7 @@ import { View,
   Platform,
   SafeAreaView,
   StyleSheet, } from 'react-native';
-import { BoldDeskSupportSDK, BoldDeskSDKHome } from 'bd-support-sdk-react-native';
+import { BoldDeskSupportSDK, BoldDeskSDKHome } from 'bolddesk_support_sdk';
 import { useEffect, useState } from 'react';
 import { sign } from 'react-native-pure-jwt';
 import { initializeNotifications } from './NotificationsService';

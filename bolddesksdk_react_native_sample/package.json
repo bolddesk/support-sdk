@@ -13,7 +13,7 @@
     "@react-native-firebase/app": "^23.5.0",
     "@react-native-firebase/messaging": "^23.5.0",
     "@react-native/new-app-screen": "0.82.1",
-    "bd-support-sdk-react-native": "^1.0.3",
+    "bolddesk_support_sdk": "^1.0.0",
     "react": "19.1.1",
     "react-native": "0.82.1",
     "react-native-pure-jwt": "^3.0.3",

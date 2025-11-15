@@ -1,6 +1,6 @@
 import messaging, { firebase } from '@react-native-firebase/messaging';
 import { PermissionsAndroid, Platform } from 'react-native';
-import { BoldDeskSupportSDK } from 'bd-support-sdk-react-native';
+import { BoldDeskSupportSDK } from 'bolddesk_support_sdk';
 import { ToastAndroid } from 'react-native';
 
 async function requestUserPermission() {
