@@ -1,12 +1,13 @@
 import 'dart:io';
 
+import 'package:bd_support_sdk/bolddesk_support_sdk.dart';
 import 'package:bolddesksdk_flutter_sample/firebase_options.dart';
 import 'package:bolddesksdk_flutter_sample/notification_service.dart';
 import 'package:dart_jsonwebtoken/dart_jsonwebtoken.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:bolddesk_support_sdk/bolddesk_support_sdk.dart';
+
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
