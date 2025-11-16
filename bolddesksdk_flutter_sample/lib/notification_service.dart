@@ -10,8 +10,12 @@ class NotificationService {
     onMessage();
 
     if (Platform.isIOS) {
-      FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
-        BoldDeskSupportSDK.handleIOSNotification(message.data);
+      FirebaseMessaging.onMessageOpenedApp.listen((
+        RemoteMessage message,
+      ) async {
+        if (await BoldDeskSupportSDK.isFromMobileSDK(message.data)) {
+          BoldDeskSupportSDK.handleIOSNotification(message.data);
+        }
       });
     }
   }
@@ -21,7 +25,12 @@ class NotificationService {
   static Future<void> backgroundHandler(RemoteMessage message) async {
     // Icon should be Drawable source
     if (Platform.isAndroid) {
-      BoldDeskSupportSDK.handleAndroidNotification(message.data, "sample_app_logo");
+      if (await BoldDeskSupportSDK.isFromMobileSDK(message.data)) {
+        BoldDeskSupportSDK.handleAndroidNotification(
+          message.data,
+          "sample_app_logo",
+        );
+      }
     }
   }
 
@@ -38,7 +47,12 @@ class NotificationService {
     FirebaseMessaging.onMessage.listen((message) async {
       if (Platform.isAndroid) {
         // Icon should be Drawable source
-        BoldDeskSupportSDK.handleAndroidNotification(message.data, "sample_app_logo");
+        if (await BoldDeskSupportSDK.isFromMobileSDK(message.data)) {
+          BoldDeskSupportSDK.handleAndroidNotification(
+            message.data,
+            "sample_app_logo",
+          );
+        }
       }
     });
   }

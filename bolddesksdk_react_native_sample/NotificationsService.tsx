@@ -42,7 +42,7 @@ async function getDeviceToken() {
 function setupForegroundNotificationHandler() {
   messaging().onMessage(async remoteMessage => {
     console.log('Foreground Message:', remoteMessage);
-    BoldDeskSupportSDK.showNotification("sample_app_logo", remoteMessage.data)
+    if (BoldDeskSupportSDK.isFromMobileSDK(remoteMessage.data)) { BoldDeskSupportSDK.showNotification("sample_app_logo", remoteMessage.data) }
   });
 }
 
@@ -74,7 +74,7 @@ export async function setupIosNotificationTapHandler() {
   // Handle notification tap when app is in background
   messaging().onNotificationOpenedApp(async remoteMessage => {
     await new Promise<void>(resolve => setTimeout(resolve, 500));
-    if (remoteMessage?.data) {
+    if (BoldDeskSupportSDK.isFromMobileSDK(remoteMessage.data)) {
       BoldDeskSupportSDK.handleNotification(remoteMessage.data);
     }
   });

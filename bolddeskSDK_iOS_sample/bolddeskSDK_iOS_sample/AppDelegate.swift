@@ -26,7 +26,9 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
         // Handle notification if app was launched from a terminated state via push.
         if let remoteNotification = launchOptions?[.remoteNotification] as? [AnyHashable: Any] {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-                BDSupportSDK.processRemoteNotification(userInfo: remoteNotification)
+                if BDSupportSDK.isFromMobileSDK(userInfo: remoteNotification){
+                    BDSupportSDK.processRemoteNotification(userInfo: remoteNotification)
+                }
             }
         }
         return true
