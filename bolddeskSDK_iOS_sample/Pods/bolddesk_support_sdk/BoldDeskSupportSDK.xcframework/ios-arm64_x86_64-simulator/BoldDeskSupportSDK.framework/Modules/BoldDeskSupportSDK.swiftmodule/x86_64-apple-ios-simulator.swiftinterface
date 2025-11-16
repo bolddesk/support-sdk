@@ -1,0 +1,71 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BoldDeskSupportSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+@_exported import BoldDeskSupportSDK
+import Combine
+import CoreText
+import DeveloperToolsSupport
+import Foundation
+import MobileCoreServices
+import Network
+import PhotosUI
+import QuickLook
+import SafariServices
+import Swift
+import SwiftUI
+import UIKit
+import UniformTypeIdentifiers
+import WebKit
+import _Concurrency
+import _PhotosUI_SwiftUI
+import _QuickLook_SwiftUI
+import _StringProcessing
+import _SwiftConcurrencyShims
+import _WebKit_SwiftUI
+import os
+public struct BDPortalConfiguration {
+  public static var customFontName: Swift.String?
+}
+public struct BDSupportSDK {
+  public static var applySystemFontSize: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func initialize(appId: Swift.String, brandURl: Swift.String, _ successCallback: ((Swift.String?) -> Swift.Void)? = nil, _ errorCallback: ((Swift.String?) -> Swift.Void)? = nil)
+  #endif
+  public static func clearallLocalData()
+  public static func logout()
+  public static func isLoggedIn() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func loginWithJWTToken(jwtToken: Swift.String, _ successCallback: ((Swift.String?) -> Swift.Void)? = nil, _ errorCallback: ((Swift.String?) -> Swift.Void)? = nil)
+  #endif
+  public static func setPreferredTheme(_ theme: BoldDeskSupportSDK.SDKTheme)
+  public static func applyTheme(accentColor: Swift.String = "", primaryColor: Swift.String = "")
+  public static func showKB()
+  public static func showCreateTicket()
+  public static func showHomeDashboard()
+  public static func enableLogging()
+  public static func enablePushNotification(fcmToken: Swift.String)
+  public static func isFromMobileSDK(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
+  @discardableResult
+  public static func processRemoteNotification(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
+}
+public struct BDSDKHome {
+  public static func setHeaderLogo(logoURL: Swift.String)
+  public static func setHomeDashboardContent(headerName: Swift.String = "", headerDescription: Swift.String = "", kbTitle: Swift.String = "", kbDescription: Swift.String = "", ticketTitle: Swift.String = "", ticketDescription: Swift.String = "", submitButtonText: Swift.String = "")
+}
+public enum SDKTheme {
+  case light
+  case dark
+  case system
+  public static func == (a: BoldDeskSupportSDK.SDKTheme, b: BoldDeskSupportSDK.SDKTheme) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+
+
+
+
+extension BoldDeskSupportSDK.SDKTheme : Swift.Equatable {}
+extension BoldDeskSupportSDK.SDKTheme : Swift.Hashable {}

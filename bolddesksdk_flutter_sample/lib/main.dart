@@ -149,12 +149,12 @@ class _MyHomePageState extends State<MyHomePage> {
     if (Platform.isAndroid) {
       // Customize font family in Android
       // Need to add font files in android/app/src/main/res/font/
-      BoldDeskSupportSDK.applyCustomFontFamilyInAndroid(
-        bold: "dancingscript_bold",
-        semiBold: "dancingscript_semibold",
-        medium: "dancingscript_medium",
-        regular: "dancingscript_regular",
-      );
+      // BoldDeskSupportSDK.applyCustomFontFamilyInAndroid(
+      //   bold: "dancingscript_bold",
+      //   semiBold: "dancingscript_semibold",
+      //   medium: "dancingscript_medium",
+      //   regular: "dancingscript_regular",
+      // );
     } else {
       // Customize font family in iOS
       BoldDeskSupportSDK.applyCustomFontFamilyInIOS("Times New Roman");

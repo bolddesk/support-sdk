@@ -90,12 +90,12 @@ export default function App() {
     // Customize font family in Android
     // Need to add font files in android/app/src/main/res/font/
     if (Platform.OS === 'android') {
-      BoldDeskSupportSDK.applyCustomFontFamilyInAndroid(
-        'dancingscript_bold',
-        'dancingscript_semibold',
-        'dancingscript_medium',
-        'dancingscript_regular'
-      );
+      // BoldDeskSupportSDK.applyCustomFontFamilyInAndroid(
+      //   'dancingscript_bold',
+      //   'dancingscript_semibold',
+      //   'dancingscript_medium',
+      //   'dancingscript_regular'
+      // );
     } else {
       // Customize font family in iOS
       BoldDeskSupportSDK.applyCustomFontFamilyIniOS('Times New Roman');
