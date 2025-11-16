@@ -1,16 +1,16 @@
 PODS:
-  - bd-support-library (2.0.0)
+  - bolddesk_support_sdk (1.0.0)
 
 DEPENDENCIES:
-  - bd-support-library (~> 2.0.0)
+  - bolddesk_support_sdk (~> 1.0.0)
 
 SPEC REPOS:
   trunk:
-    - bd-support-library
+    - bolddesk_support_sdk
 
 SPEC CHECKSUMS:
-  bd-support-library: de7bcbff21b972048f5f12c9fe64db813550299d
+  bolddesk_support_sdk: d206bc3b362289abd6c92d9acc800fa0494fc967
 
-PODFILE CHECKSUM: a0061ee35d7022744f1b95152d24eccdd92ae5a8
+PODFILE CHECKSUM: a4bf7d67a8488750c14f2e3aaa02e63583974104
 
 COCOAPODS: 1.16.2

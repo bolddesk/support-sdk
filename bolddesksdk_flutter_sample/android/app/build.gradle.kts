@@ -24,7 +24,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.syncfusion.bolddesksdk"
+        applicationId = "com.example.bolddesksdk_flutter_sample"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = 28
@@ -32,13 +32,12 @@ android {
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
-
+    
     packaging {
         resources {
             excludes += "META-INF/versions/9/OSGI-INF/MANIFEST.MF"
         }
     }
- 
 
     buildTypes {
         release {

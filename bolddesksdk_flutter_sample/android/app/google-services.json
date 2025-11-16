@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:1094423700279:android:cf61fb43b12c10ea7eb0b2",
         "android_client_info": {
-          "package_name": "com.syncfusion.bolddesksdk"
+          "package_name": "com.example.bolddesksdk_flutter_sample"
         }
       },
       "oauth_client": [],

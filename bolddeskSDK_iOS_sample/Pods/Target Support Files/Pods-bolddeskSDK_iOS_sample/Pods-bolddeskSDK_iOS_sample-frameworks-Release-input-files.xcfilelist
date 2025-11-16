@@ -1,2 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-bolddeskSDK_iOS_sample/Pods-bolddeskSDK_iOS_sample-frameworks.sh
-${PODS_XCFRAMEWORKS_BUILD_DIR}/bd-support-library/BoldDeskSupportSDK.framework/BoldDeskSupportSDK
+${PODS_XCFRAMEWORKS_BUILD_DIR}/bolddesk_support_sdk/BoldDeskSupportSDK.framework/BoldDeskSupportSDK

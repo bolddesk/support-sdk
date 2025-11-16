@@ -7,47 +7,47 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		0A6C2AC8D0A280A677EA7CC160142612 /* bd-support-library */ = {
+		A10610F2C9E9FE153586E13311D3A174 /* bolddesk_support_sdk */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 0EAABF2C2D14FD78C62C5DEF54ADB8C3 /* Build configuration list for PBXAggregateTarget "bd-support-library" */;
+			buildConfigurationList = 6018416B96D2C9F8B39C78D9975825B5 /* Build configuration list for PBXAggregateTarget "bolddesk_support_sdk" */;
 			buildPhases = (
-				7D7893D45D876CAD970970E54547C5B2 /* [CP] Copy XCFrameworks */,
+				4C7669DE229171EABCD227CA404DF21E /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
-			name = "bd-support-library";
+			name = bolddesk_support_sdk;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		8A4C779A7CD2098AEB44D59BB2C41C59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		96EA6EC79417B4983E86235435830521 /* Pods-bolddeskSDK_iOS_sample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF5ECCA2F69328D72EC07938131DB74 /* Pods-bolddeskSDK_iOS_sample-dummy.m */; };
-		F2220CD8A803284911B9FADEF883B285 /* Pods-bolddeskSDK_iOS_sample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BFC4D941B0F3F5B6FBDE69DD120CC66 /* Pods-bolddeskSDK_iOS_sample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13F3D4D3844F586DD2FC0AD1C2A41DAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		25D4B737DD2A643BCF7015AB03B2D55B /* Pods-bolddeskSDK_iOS_sample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EF5ECCA2F69328D72EC07938131DB74 /* Pods-bolddeskSDK_iOS_sample-dummy.m */; };
+		7E0B59C9B56814A62CDBBD003220990B /* Pods-bolddeskSDK_iOS_sample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BFC4D941B0F3F5B6FBDE69DD120CC66 /* Pods-bolddeskSDK_iOS_sample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		151730B0F93B07AB0A936E17AF1A026C /* PBXContainerItemProxy */ = {
+		77EB99576235562A44AD5DF4CF41B94C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0A6C2AC8D0A280A677EA7CC160142612;
-			remoteInfo = "bd-support-library";
+			remoteGlobalIDString = A10610F2C9E9FE153586E13311D3A174;
+			remoteInfo = bolddesk_support_sdk;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00715816E94A44E2A0C583B3C74E585E /* BoldDeskSupportSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = BoldDeskSupportSDK.xcframework; sourceTree = "<group>"; };
+		035137B131869F33062C96FFA1EC79D3 /* bolddesk_support_sdk-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "bolddesk_support_sdk-xcframeworks.sh"; sourceTree = "<group>"; };
+		0963591715D93CB55AB80C26A4158B63 /* bolddesk_support_sdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = bolddesk_support_sdk.release.xcconfig; sourceTree = "<group>"; };
 		1D4785B15096A12A1EC613C4F9FF7B2F /* Pods-bolddeskSDK_iOS_sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-bolddeskSDK_iOS_sample.release.xcconfig"; sourceTree = "<group>"; };
 		28EBFA5C52105FEC816A7A8EB7A0DC19 /* Pods-bolddeskSDK_iOS_sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-bolddeskSDK_iOS_sample-frameworks.sh"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3A60343F3C1D0C3FCC2F6A8D14A55844 /* Pods-bolddeskSDK_iOS_sample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-bolddeskSDK_iOS_sample"; path = Pods_bolddeskSDK_iOS_sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ADC44C588DDD4A2EDA151B653446673 /* Pods-bolddeskSDK_iOS_sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-bolddeskSDK_iOS_sample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6AA4822F2A26989E816D854DC86B6C01 /* bd-support-library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "bd-support-library.debug.xcconfig"; sourceTree = "<group>"; };
-		86707EFEB2A5DF7B78CE97B306394CE6 /* bd-support-library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "bd-support-library.release.xcconfig"; sourceTree = "<group>"; };
 		8BFC4D941B0F3F5B6FBDE69DD120CC66 /* Pods-bolddeskSDK_iOS_sample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-bolddeskSDK_iOS_sample-umbrella.h"; sourceTree = "<group>"; };
-		8E8A37098372FDCF50A2A77EFF1A10C1 /* bd-support-library-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "bd-support-library-xcframeworks.sh"; sourceTree = "<group>"; };
 		8EF5ECCA2F69328D72EC07938131DB74 /* Pods-bolddeskSDK_iOS_sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-bolddeskSDK_iOS_sample-dummy.m"; sourceTree = "<group>"; };
+		9BBE65B26D177A38EAA5A32B1AFC6862 /* bolddesk_support_sdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = bolddesk_support_sdk.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C8EB79BBF746AA3A0AF2804E7B353B57 /* BoldDeskSupportSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = BoldDeskSupportSDK.xcframework; sourceTree = "<group>"; };
 		C9BED1E8B2332702EA842E9518318878 /* Pods-bolddeskSDK_iOS_sample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-bolddeskSDK_iOS_sample-Info.plist"; sourceTree = "<group>"; };
 		D3775F759A5786639DE8E20A67BABBFD /* Pods-bolddeskSDK_iOS_sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-bolddeskSDK_iOS_sample-acknowledgements.plist"; sourceTree = "<group>"; };
 		D7322FAAE864947063CE5EF1D6B322B8 /* Pods-bolddeskSDK_iOS_sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-bolddeskSDK_iOS_sample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -55,60 +55,31 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6B1849516D01A73C0D28423E5DBE6159 /* Frameworks */ = {
+		92375E86A097746E4DEA2955CE54741C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A4C779A7CD2098AEB44D59BB2C41C59 /* Foundation.framework in Frameworks */,
+				13F3D4D3844F586DD2FC0AD1C2A41DAE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24E725353CCAFBF128D4BB719ED6EEA2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				40A6B7EFDD1C4D9861EB0865E097D1C5 /* bd-support-library */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		27543688EA91663F10C9FABB1368E203 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				00715816E94A44E2A0C583B3C74E585E /* BoldDeskSupportSDK.xcframework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3189D6220CE1ADBA06E0207B4D884B66 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8E8A37098372FDCF50A2A77EFF1A10C1 /* bd-support-library-xcframeworks.sh */,
-				6AA4822F2A26989E816D854DC86B6C01 /* bd-support-library.debug.xcconfig */,
-				86707EFEB2A5DF7B78CE97B306394CE6 /* bd-support-library.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/bd-support-library";
-			sourceTree = "<group>";
-		};
-		40A6B7EFDD1C4D9861EB0865E097D1C5 /* bd-support-library */ = {
-			isa = PBXGroup;
-			children = (
-				27543688EA91663F10C9FABB1368E203 /* Frameworks */,
-				3189D6220CE1ADBA06E0207B4D884B66 /* Support Files */,
-			);
-			name = "bd-support-library";
-			path = "bd-support-library";
-			sourceTree = "<group>";
-		};
 		451E73E913503F0F4F17D97C07EE10A8 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				AE92FFA6FA3879D9DC0E6CC48A10F3CD /* Pods-bolddeskSDK_iOS_sample */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		464B62781C39B4E4A62FC77B2C1890FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA56A4EA76674BE0EC519D44368B19B4 /* bolddesk_support_sdk */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		AE92FFA6FA3879D9DC0E6CC48A10F3CD /* Pods-bolddeskSDK_iOS_sample */ = {
@@ -128,12 +99,20 @@
 			path = "Target Support Files/Pods-bolddeskSDK_iOS_sample";
 			sourceTree = "<group>";
 		};
+		AFBEE34331CB6F175F831B8CC1B48951 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8EB79BBF746AA3A0AF2804E7B353B57 /* BoldDeskSupportSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				24E725353CCAFBF128D4BB719ED6EEA2 /* Pods */,
+				464B62781C39B4E4A62FC77B2C1890FF /* Pods */,
 				DBE83C2D73985AEE8F03A842D8598AA6 /* Products */,
 				451E73E913503F0F4F17D97C07EE10A8 /* Targets Support Files */,
 			);
@@ -163,14 +142,35 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		EA56A4EA76674BE0EC519D44368B19B4 /* bolddesk_support_sdk */ = {
+			isa = PBXGroup;
+			children = (
+				AFBEE34331CB6F175F831B8CC1B48951 /* Frameworks */,
+				F2FB0989C6E94FB49748013E5B743D6E /* Support Files */,
+			);
+			name = bolddesk_support_sdk;
+			path = bolddesk_support_sdk;
+			sourceTree = "<group>";
+		};
+		F2FB0989C6E94FB49748013E5B743D6E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				035137B131869F33062C96FFA1EC79D3 /* bolddesk_support_sdk-xcframeworks.sh */,
+				9BBE65B26D177A38EAA5A32B1AFC6862 /* bolddesk_support_sdk.debug.xcconfig */,
+				0963591715D93CB55AB80C26A4158B63 /* bolddesk_support_sdk.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/bolddesk_support_sdk";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A31B8884EE8525A3DEEBDB1070762BA2 /* Headers */ = {
+		11DC451DE6660C33E78B3335A038AE93 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F2220CD8A803284911B9FADEF883B285 /* Pods-bolddeskSDK_iOS_sample-umbrella.h in Headers */,
+				7E0B59C9B56814A62CDBBD003220990B /* Pods-bolddeskSDK_iOS_sample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,17 +179,17 @@
 /* Begin PBXNativeTarget section */
 		6A36F1FDD0110AFA6A282E8447C8C689 /* Pods-bolddeskSDK_iOS_sample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BC08D705E5595D6F25B4D4B7AE102CA /* Build configuration list for PBXNativeTarget "Pods-bolddeskSDK_iOS_sample" */;
+			buildConfigurationList = D78352534016022E0A8524DB5AD23A97 /* Build configuration list for PBXNativeTarget "Pods-bolddeskSDK_iOS_sample" */;
 			buildPhases = (
-				A31B8884EE8525A3DEEBDB1070762BA2 /* Headers */,
-				BED5CAE2985539C5141B46128C0D73D4 /* Sources */,
-				6B1849516D01A73C0D28423E5DBE6159 /* Frameworks */,
-				590CC417E76590F03E103ACDFB463D43 /* Resources */,
+				11DC451DE6660C33E78B3335A038AE93 /* Headers */,
+				7182C1034CE4888F70EC63F80A431BAA /* Sources */,
+				92375E86A097746E4DEA2955CE54741C /* Frameworks */,
+				DA28E21F4945A5C9916681CCF7089229 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EAB445711F64B7858D7D4409223A1C05 /* PBXTargetDependency */,
+				3E81AFBDD355DF0EF38B41D446986BB7 /* PBXTargetDependency */,
 			);
 			name = "Pods-bolddeskSDK_iOS_sample";
 			productName = Pods_bolddeskSDK_iOS_sample;
@@ -220,14 +220,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A6C2AC8D0A280A677EA7CC160142612 /* bd-support-library */,
+				A10610F2C9E9FE153586E13311D3A174 /* bolddesk_support_sdk */,
 				6A36F1FDD0110AFA6A282E8447C8C689 /* Pods-bolddeskSDK_iOS_sample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		590CC417E76590F03E103ACDFB463D43 /* Resources */ = {
+		DA28E21F4945A5C9916681CCF7089229 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -237,46 +237,86 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7D7893D45D876CAD970970E54547C5B2 /* [CP] Copy XCFrameworks */ = {
+		4C7669DE229171EABCD227CA404DF21E /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/bd-support-library/bd-support-library-xcframeworks-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/bolddesk_support_sdk/bolddesk_support_sdk-xcframeworks-input-files.xcfilelist",
 			);
 			name = "[CP] Copy XCFrameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/bd-support-library/bd-support-library-xcframeworks-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/bolddesk_support_sdk/bolddesk_support_sdk-xcframeworks-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/bd-support-library/bd-support-library-xcframeworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/bolddesk_support_sdk/bolddesk_support_sdk-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		BED5CAE2985539C5141B46128C0D73D4 /* Sources */ = {
+		7182C1034CE4888F70EC63F80A431BAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96EA6EC79417B4983E86235435830521 /* Pods-bolddeskSDK_iOS_sample-dummy.m in Sources */,
+				25D4B737DD2A643BCF7015AB03B2D55B /* Pods-bolddeskSDK_iOS_sample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EAB445711F64B7858D7D4409223A1C05 /* PBXTargetDependency */ = {
+		3E81AFBDD355DF0EF38B41D446986BB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "bd-support-library";
-			target = 0A6C2AC8D0A280A677EA7CC160142612 /* bd-support-library */;
-			targetProxy = 151730B0F93B07AB0A936E17AF1A026C /* PBXContainerItemProxy */;
+			name = bolddesk_support_sdk;
+			target = A10610F2C9E9FE153586E13311D3A174 /* bolddesk_support_sdk */;
+			targetProxy = 77EB99576235562A44AD5DF4CF41B94C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		047E45B006E418047D88BC461D99404C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D4785B15096A12A1EC613C4F9FF7B2F /* Pods-bolddeskSDK_iOS_sample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-bolddeskSDK_iOS_sample/Pods-bolddeskSDK_iOS_sample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-bolddeskSDK_iOS_sample/Pods-bolddeskSDK_iOS_sample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		44A4B2FB6211B90C1949A44A381F6D1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -339,47 +379,44 @@
 			};
 			name = Release;
 		};
-		50D35F548D172517FA3CF1173D46C1C1 /* Release */ = {
+		49D039F7CDBCBA55BA7F8CDD7999A8FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D4785B15096A12A1EC613C4F9FF7B2F /* Pods-bolddeskSDK_iOS_sample.release.xcconfig */;
+			baseConfigurationReference = 9BBE65B26D177A38EAA5A32B1AFC6862 /* bolddesk_support_sdk.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-bolddeskSDK_iOS_sample/Pods-bolddeskSDK_iOS_sample-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-bolddeskSDK_iOS_sample/Pods-bolddeskSDK_iOS_sample.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6043D83627E7A93D10B79A7B80424564 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0963591715D93CB55AB80C26A4158B63 /* bolddesk_support_sdk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		84C123E213F431B286BBDCCA742A49A1 /* Debug */ = {
+		7DB9AD9F6D0744389B9AD2E5C1A35829 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D7322FAAE864947063CE5EF1D6B322B8 /* Pods-bolddeskSDK_iOS_sample.debug.xcconfig */;
 			buildSettings = {
@@ -417,25 +454,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		84D0D23CF310D027740DAEFEF7CF3454 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86707EFEB2A5DF7B78CE97B306394CE6 /* bd-support-library.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		A0DC1C2C814704734F83EAB35BB20B21 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -503,50 +521,32 @@
 			};
 			name = Debug;
 		};
-		C6B745605AB13AE65F5AE576A365A262 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6AA4822F2A26989E816D854DC86B6C01 /* bd-support-library.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0EAABF2C2D14FD78C62C5DEF54ADB8C3 /* Build configuration list for PBXAggregateTarget "bd-support-library" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C6B745605AB13AE65F5AE576A365A262 /* Debug */,
-				84D0D23CF310D027740DAEFEF7CF3454 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3BC08D705E5595D6F25B4D4B7AE102CA /* Build configuration list for PBXNativeTarget "Pods-bolddeskSDK_iOS_sample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				84C123E213F431B286BBDCCA742A49A1 /* Debug */,
-				50D35F548D172517FA3CF1173D46C1C1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A0DC1C2C814704734F83EAB35BB20B21 /* Debug */,
 				44A4B2FB6211B90C1949A44A381F6D1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6018416B96D2C9F8B39C78D9975825B5 /* Build configuration list for PBXAggregateTarget "bolddesk_support_sdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49D039F7CDBCBA55BA7F8CDD7999A8FD /* Debug */,
+				6043D83627E7A93D10B79A7B80424564 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D78352534016022E0A8524DB5AD23A97 /* Build configuration list for PBXNativeTarget "Pods-bolddeskSDK_iOS_sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB9AD9F6D0744389B9AD2E5C1A35829 /* Debug */,
+				047E45B006E418047D88BC461D99404C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
