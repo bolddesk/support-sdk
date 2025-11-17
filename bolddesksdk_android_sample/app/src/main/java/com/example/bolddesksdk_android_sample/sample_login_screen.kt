@@ -251,6 +251,13 @@ fun LoginScreen(
                     ButtonWidget(
                         text = "Login",
                         onClick = {
+                            if (BoldDeskSupportSDK.isLoggedIn(context)) {
+                                Toast.makeText(
+                                    context,
+                                    "User Already Logged In",
+                                    Toast.LENGTH_SHORT
+                                ).show()
+                            } else {
                             if (clientEmail.isNotEmpty() && serverKey.isNotEmpty()) {
                                 coroutineScope.launch {
                                     isLoading = true
@@ -295,6 +302,7 @@ fun LoginScreen(
                                     Toast.LENGTH_SHORT
                                 ).show()
                             }
+                        }
                         }
                     )
                     ButtonWidget(

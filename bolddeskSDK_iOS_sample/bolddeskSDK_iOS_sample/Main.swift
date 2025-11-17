@@ -189,6 +189,12 @@ struct LoginView: View {
     }
 
     func jwt() {
+        if BDSupportSDK.isLoggedIn() {
+            toastMessage = "Already user logged in."
+            isErrorToast = false
+            showToastWithAutoHide()
+            return
+        }
         isLoading = true
         var jwtToken: String = ""
         do {

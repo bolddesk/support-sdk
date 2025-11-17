@@ -62,6 +62,6 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:34.3.0"))
     implementation("com.google.firebase:firebase-messaging:25.0.1")
     implementation("com.auth0:java-jwt:4.5.0")
-    implementation("com.bolddesk:bolddesk_support_sdk:1.0.1")
+    implementation("com.bolddesk:bolddesk_support_sdk:1.0.3")
 
 }

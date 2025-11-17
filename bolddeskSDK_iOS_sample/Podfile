@@ -5,6 +5,6 @@ target 'bolddeskSDK_iOS_sample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'bolddesk_support_sdk', '~> 1.0.0'
+  pod 'bolddesk_support_sdk', '~> 1.0.1'
 
 end
