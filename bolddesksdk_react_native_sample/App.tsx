@@ -63,6 +63,10 @@ export default function App() {
 
   // --- Login using Secret Key & Email ---
   const loginUser = async () => {
+    if (BoldDeskSupportSDK.isLoggedIn()) {
+      setLoginMessage('User already logged in');
+      return;
+    }
     if (!secretKey || !email) {
       setLoginMessage('Please enter Secret Key and Email ID.');
       return;

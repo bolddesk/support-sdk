@@ -111,7 +111,11 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   // Login using secret key & email
-  void _loginUser() {
+  Future<void> _loginUser() async {
+    if (await BoldDeskSupportSDK.isLoggedIn()){
+      setState(() => loginMessage = 'User already logged in.');
+      return;
+    }
     final secretkey = _secretKeyController.text;
     final email = _emailController.text;
 
