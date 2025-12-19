@@ -258,51 +258,54 @@ fun LoginScreen(
                                     Toast.LENGTH_SHORT
                                 ).show()
                             } else {
-                            if (clientEmail.isNotEmpty() && serverKey.isNotEmpty()) {
-                                coroutineScope.launch {
-                                    isLoading = true
-                                    getToken()
-                                    delay(100)
-                                    BoldDeskSupportSDK.setFCMRegistrationToken(context, fcm_token)
-                                    val jwt = JWTUtils.generateJwt(
-                                        clientEmail,
-                                        serverKey
-                                    )
-                                    withContext(Dispatchers.IO) {
-                                        BoldDeskSupportSDK.loginWithJWTToken(
+                                if (clientEmail.isNotEmpty() && serverKey.isNotEmpty()) {
+                                    coroutineScope.launch {
+                                        isLoading = true
+                                        getToken()
+                                        delay(100)
+                                        BoldDeskSupportSDK.setFCMRegistrationToken(
                                             context,
-                                            jwtToken = jwt,
-                                            onSuccessCallback = {
-                                                coroutineScope.launch(Dispatchers.Main) {
-                                                    isLoading = false
-                                                    Toast.makeText(
-                                                        context,
-                                                        it,
-                                                        Toast.LENGTH_SHORT
-                                                    ).show()
-                                                }
-                                            },
-                                            onErrorCallback = {
-                                                coroutineScope.launch(Dispatchers.Main) {
-                                                    isLoading = false
-                                                    Toast.makeText(
-                                                        context,
-                                                        it,
-                                                        Toast.LENGTH_SHORT
-                                                    ).show()
-                                                }
-                                            }
+                                            fcm_token
                                         )
+                                        val jwt = JWTUtils.generateJwt(
+                                            clientEmail,
+                                            serverKey
+                                        )
+                                        withContext(Dispatchers.IO) {
+                                            BoldDeskSupportSDK.loginWithJWTToken(
+                                                context,
+                                                jwtToken = jwt,
+                                                onSuccessCallback = {
+                                                    coroutineScope.launch(Dispatchers.Main) {
+                                                        isLoading = false
+                                                        Toast.makeText(
+                                                            context,
+                                                            it,
+                                                            Toast.LENGTH_SHORT
+                                                        ).show()
+                                                    }
+                                                },
+                                                onErrorCallback = {
+                                                    coroutineScope.launch(Dispatchers.Main) {
+                                                        isLoading = false
+                                                        Toast.makeText(
+                                                            context,
+                                                            it,
+                                                            Toast.LENGTH_SHORT
+                                                        ).show()
+                                                    }
+                                                }
+                                            )
+                                        }
                                     }
+                                } else {
+                                    Toast.makeText(
+                                        context,
+                                        "Please fill Above Fields",
+                                        Toast.LENGTH_SHORT
+                                    ).show()
                                 }
-                            } else {
-                                Toast.makeText(
-                                    context,
-                                    "Please fill Above Fields",
-                                    Toast.LENGTH_SHORT
-                                ).show()
                             }
-                        }
                         }
                     )
                     ButtonWidget(
@@ -418,7 +421,28 @@ fun LoginScreen(
                                 BoldDeskSupportSDK.showKB(context = context)
                             }
                         )
+                    if (isTablet)
+                        ButtonWidget(
+                            text = "Open Article Page",
+                            onClick = {
+                                focusManager.clearFocus()
+                                applyConfigurations()
+                                BoldDeskSupportSDK.openArticleDetailsPage(
+                                    context,
+                                    404,
+                                    "how-to-install-and-configure-the-visual-studio-community"
+                                )
+                            }
+                        )
                 }
+                ButtonWidget(
+                    text = "Open Recent Tickets",
+                    onClick = {
+                        focusManager.clearFocus()
+                        applyConfigurations()
+                        BoldDeskSupportSDK.openRecentTickets(context = context)
+                    }
+                )
                 if (!isTablet)
                     Row {
                         ButtonWidget(
@@ -427,6 +451,18 @@ fun LoginScreen(
                                 focusManager.clearFocus()
                                 applyConfigurations()
                                 BoldDeskSupportSDK.showKB(context = context)
+                            }
+                        )
+                        ButtonWidget(
+                            text = "Open Article Page",
+                            onClick = {
+                                focusManager.clearFocus()
+                                applyConfigurations()
+                                BoldDeskSupportSDK.openArticleDetailsPage(
+                                    context,
+                                    404,
+                                    "how-to-install-and-configure-the-visual-studio-community"
+                                )
                             }
                         )
                     }
